@@ -1,13 +1,13 @@
 import React from 'react';
 import SnapCarousel from 'react-native-snap-carousel';
 import {AppDimensions} from '../../utils/AppDimensions';
-import {ImageBackground, View} from 'react-native';
+import {View, Image} from 'react-native';
 
 class Carousel extends React.Component {
   renderItem = ({item}) => {
     return (
       <View>
-        <ImageBackground
+        <Image
           style={{height: 200}}
           source={{uri: item.image}}
           resizeMode="cover"
