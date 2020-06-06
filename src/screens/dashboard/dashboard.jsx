@@ -111,11 +111,11 @@ class Dashboard extends Component {
       <SafeAreaView style={dashboardStyles.container}>
         <ScrollView stickyHeaderIndices={[0]}>
           <View>
-            <View style={{flex: 1, flexDirection: 'row', paddingVertical: 10, paddingHorizontal: 10, backgroundColor: Colors.Black,}}>
+            <View style={{flex: 1, flexDirection: 'row', paddingVertical: 5, backgroundColor: Colors.Black,}}>
               <View style={{flex: 1, justifyContent: 'center', alignItems: 'flex-start',}}>
-                <Image style={{height: 30, width: 100}} resizeMode={'contain'} source={{uri: 'https://ullu.app/assets/img/ullu-text.png'}} />
+                <Image style={{height: 40, width: 120}} resizeMode={'cover'} source={require('../../../assets/spLogo.png')} />
               </View>
-              <View style={{flex: 1, justifyContent: 'center', alignItems: 'flex-end'}}>
+              <View style={{flex: 1, justifyContent: 'center', alignItems: 'flex-end', marginRight: 20}}>
                 <IoniconsIcon name={'ios-search'} size={25} color={'white'} />
               </View>
             </View>
